@@ -1,0 +1,4 @@
+Fanar-1-9B                           root 76.00%  reason 55.00%  morph 20.00%  overall 61.18%
+Qwen3-4B-Base                        root 60.00%  reason 100.00%  morph 33.33%  overall 64.71%
+run1_fanar-q5_k_m-llamacpp           root 90.00%  reason 100.00%  morph 46.67%  overall 84.71%
+smoke_sft-q5_k_m                     root 88.00%  reason 100.00%  morph 33.33%  overall 81.18%

@@ -1,0 +1,25 @@
+bakeoff: Qwen3-4B-Base | greedy=True | 2026-10-05 23:57 EDT
+`torch_dtype` is deprecated! Use `dtype` instead!
+W1005 23:57:28.433000 33628 Lib\site-packages\torch\utils\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1005 23:57:28.467000 33628 Lib\site-packages\torch\utils\_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 6804.13it/s]
+  [8/85] generated
+  [16/85] generated
+  [24/85] generated
+  [32/85] generated
+  [40/85] generated
+  [48/85] generated
+  [56/85] generated
+  [64/85] generated
+  [72/85] generated
+  [80/85] generated
+  [85/85] generated
+
+===== RESULTS =====
+root      : 30/50 = 60.00%
+reasoning : 20/20 = 100.00%
+morphology: 5/15 = 33.33%
+overall   : 64.71%
+===================
+details -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_details_Qwen3-4B-Base.json
+appended -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_results.jsonl

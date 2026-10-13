@@ -1,0 +1,21 @@
+bakeoff: merged_16bit | greedy=True | 2026-10-05 21:53 EDT
+  [8/85] generated
+  [16/85] generated
+  [24/85] generated
+  [32/85] generated
+  [40/85] generated
+  [48/85] generated
+  [56/85] generated
+  [64/85] generated
+  [72/85] generated
+  [80/85] generated
+  [85/85] generated
+
+===== RESULTS =====
+root      : 47/50 = 94.00%
+reasoning : 20/20 = 100.00%
+morphology: 7/15 = 46.67%
+overall   : 87.06%
+===================
+details -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_details_merged_16bit.json
+appended -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_results.jsonl

@@ -1,0 +1,77 @@
+{
+ "model": "soup50-q5_k_m",
+ "date": "2026-10-07 06:55",
+ "gate_v3": {
+  "overall": 0.9765,
+  "bar": 0.8471,
+  "pass": true,
+  "root": 0.96,
+  "reasoning": 1.0,
+  "morphology": 1.0
+ },
+ "packet_b": {
+  "root/fewshot": {
+   "acc": 0.7399,
+   "bar": 0.5377,
+   "pass": true
+  },
+  "root/bare": {
+   "acc": 0.7311,
+   "bar": 0.4885,
+   "pass": true
+  },
+  "morph": {
+   "acc": 0.9463,
+   "bar": 0.6121,
+   "pass": true
+  }
+ },
+ "packet_b_bare_vs_base": {
+  "acc": 0.7311,
+  "base": 0.5945,
+  "beats_base": true
+ },
+ "morph_by_form": {
+  "1": 0.8788,
+  "10": 1.0,
+  "2": 0.9796,
+  "3": 0.9636,
+  "4": 0.9437,
+  "5": 0.9545,
+  "6": 0.85,
+  "7": 1.0,
+  "8": 0.931
+ },
+ "packet_b_root_class_bare": {
+  "assimilated": 0.5634,
+  "defective": 0.5714,
+  "doubled": 0.6104,
+  "hamzated": 0.5405,
+  "hollow": 0.629,
+  "sound": 0.8537
+ },
+ "probe_مستخدمين": [
+  {
+   "prompt": [
+    "ما جذر كلمة «مستخدمين»؟",
+    "الجذر:"
+   ],
+   "raw": " خدم\n"
+  },
+  {
+   "prompt": [
+    "كلمة: مستخدمين",
+    "الجذر:"
+   ],
+   "raw": "خدم\n"
+  },
+  {
+   "prompt": [
+    "كلمة: مستخدمين",
+    "الجذر:"
+   ],
+   "raw": " خدم\n"
+  }
+ ],
+ "PASS": true
+}

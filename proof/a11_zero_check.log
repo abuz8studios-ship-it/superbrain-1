@@ -1,0 +1,8 @@
+server pid 52292
+server up
+server stopped
+V0_original {'fix_bug': '0/114', 'complete_function': '0/114', 'fix+complete': '0/228'}
+V1_splice {'fix_bug': '0/114', 'complete_function': '59/114', 'fix+complete': '59/228'}
+V2_prefill {'fix_bug': '111/114', 'complete_function': '18/114', 'fix+complete': '129/228'}
+{"model": "run6_math_grpo-q5_k_m", "gguf": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\train\\run6_math_grpo\\gguf\\superbrain1-q5_k_m.gguf", "date": "2026-10-13 02:56", "gpu": "CUDA_VISIBLE_DEVICES=0 (PCI_BUS_ID)", "n_predict": 768, "per_variant": {"V0_original": {"fix_bug": "0/114", "complete_function": "0/114", "fix+complete": "0/228"}, "V1_splice": {"fix_bug": "0/114", "complete_function": "59/114", "fix+complete": "59/228"}, "V2_prefill": {"fix_bug": "111/114", "complete_function": "18/114", "fix+complete": "129/228"}}, "no_def_in_v0": 228, "no_def_in_v2": 80, "raw": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\proof\\a11_zero_check_raw_run6_math_grpo-q5_k_m.jsonl"} 
+wrote E:\ABU\02_PROJECTS\AHMAD-1\proof\a11_zero_check_run6_math_grpo-q5_k_m.json

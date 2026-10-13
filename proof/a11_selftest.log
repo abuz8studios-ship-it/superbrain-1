@@ -1,0 +1,22 @@
+selftest[gold]: 1026/1026 = 100.00%
+  predict-output: 380/380 = 100.00%
+  write-function: 418/418 = 100.00%
+  fix-bug: 114/114 = 100.00%
+  complete: 114/114 = 100.00%
+selftest[shuffled]: 2/1026 = 0.19%
+  predict-output: 1/380 = 0.26%
+  write-function: 1/418 = 0.24%
+  fix-bug: 0/114 = 0.00%
+  complete: 0/114 = 0.00%
+selftest[rotated]: 0/1026 = 0.00%
+  predict-output: 0/380 = 0.00%
+  write-function: 0/418 = 0.00%
+  fix-bug: 0/114 = 0.00%
+  complete: 0/114 = 0.00%
+selftest[empty]: 0/1026 = 0.00%
+  predict-output: 0/380 = 0.00%
+  write-function: 0/418 = 0.00%
+  fix-bug: 0/114 = 0.00%
+  complete: 0/114 = 0.00%
+wrote E:\ABU\02_PROJECTS\AHMAD-1\proof\a11_selftest.json
+SELFTEST PASS

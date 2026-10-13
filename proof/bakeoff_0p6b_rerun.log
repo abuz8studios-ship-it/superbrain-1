@@ -1,0 +1,23 @@
+bakeoff: Qwen3-0.6B-Base | greedy=True | 2026-09-19 17:08 EDT
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  20%|█▉        | 61/310 [00:00<00:00, 574.28it/s]Loading weights:  39%|███▉      | 122/310 [00:00<00:00, 578.97it/s]Loading weights:  58%|█████▊    | 180/310 [00:00<00:00, 367.67it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 612.49it/s]
+  [8/85] generated
+  [16/85] generated
+  [24/85] generated
+  [32/85] generated
+  [40/85] generated
+  [48/85] generated
+  [56/85] generated
+  [64/85] generated
+  [72/85] generated
+  [80/85] generated
+  [85/85] generated
+
+===== RESULTS =====
+root      : 16/50 = 32.00%
+reasoning : 17/20 = 85.00%
+morphology: 4/15 = 26.67%
+overall   : 43.53%
+===================
+details -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_details_Qwen3-0.6B-Base.json
+appended -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_results.jsonl

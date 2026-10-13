@@ -1,0 +1,121 @@
+{
+ "mode": "selftest",
+ "date": "2026-10-12 22:52",
+ "exam": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\train\\packet_a11_exam.jsonl",
+ "gold": {
+  "n": 1026,
+  "correct": 1026,
+  "acc": 1.0,
+  "per_type": {
+   "predict-output": {
+    "n": 380,
+    "correct": 380,
+    "acc": 1.0
+   },
+   "write-function": {
+    "n": 418,
+    "correct": 418,
+    "acc": 1.0
+   },
+   "fix-bug": {
+    "n": 114,
+    "correct": 114,
+    "acc": 1.0
+   },
+   "complete": {
+    "n": 114,
+    "correct": 114,
+    "acc": 1.0
+   }
+  },
+  "server_errors": 0,
+  "secs": 4.1
+ },
+ "shuffled": {
+  "n": 1026,
+  "correct": 2,
+  "acc": 0.0019,
+  "per_type": {
+   "predict-output": {
+    "n": 380,
+    "correct": 1,
+    "acc": 0.0026
+   },
+   "write-function": {
+    "n": 418,
+    "correct": 1,
+    "acc": 0.0024
+   },
+   "fix-bug": {
+    "n": 114,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "complete": {
+    "n": 114,
+    "correct": 0,
+    "acc": 0.0
+   }
+  },
+  "server_errors": 0,
+  "secs": 4.3
+ },
+ "rotated": {
+  "n": 1026,
+  "correct": 0,
+  "acc": 0.0,
+  "per_type": {
+   "predict-output": {
+    "n": 380,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "write-function": {
+    "n": 418,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "fix-bug": {
+    "n": 114,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "complete": {
+    "n": 114,
+    "correct": 0,
+    "acc": 0.0
+   }
+  },
+  "server_errors": 0,
+  "secs": 4.2
+ },
+ "empty": {
+  "n": 1026,
+  "correct": 0,
+  "acc": 0.0,
+  "per_type": {
+   "predict-output": {
+    "n": 380,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "write-function": {
+    "n": 418,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "fix-bug": {
+    "n": 114,
+    "correct": 0,
+    "acc": 0.0
+   },
+   "complete": {
+    "n": 114,
+    "correct": 0,
+    "acc": 0.0
+   }
+  },
+  "server_errors": 0,
+  "secs": 0.0
+ }
+}

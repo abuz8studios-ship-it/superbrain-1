@@ -1,0 +1,146 @@
+{
+ "model": "run6_math_grpo-q5_k_m",
+ "harness": "a11_eval_v2",
+ "gguf": null,
+ "url": "http://127.0.0.1:8121",
+ "date": "2026-10-13 04:54",
+ "exam": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\train\\packet_a11_exam.jsonl",
+ "endpoint": "completion",
+ "prefill_code_kinds": "\n```python\n",
+ "n_predict": 768,
+ "gen_secs": 7.8,
+ "raw": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\proof\\a11_v2_raw_run6_math_grpo-q5_k_m-smoke52.jsonl",
+ "n": 52,
+ "correct": 32,
+ "acc": 0.6154,
+ "per_type": {
+  "predict-output": {
+   "n": 13,
+   "correct": 0,
+   "acc": 0.0
+  },
+  "write-function": {
+   "n": 13,
+   "correct": 11,
+   "acc": 0.8462
+  },
+  "fix-bug": {
+   "n": 13,
+   "correct": 12,
+   "acc": 0.9231
+  },
+  "complete": {
+   "n": 13,
+   "correct": 9,
+   "acc": 0.6923
+  }
+ },
+ "server_errors": 0,
+ "v1_reference": {
+  "file": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\proof\\a11_run6_math_grpo-q5_k_m.json",
+  "correct": 103,
+  "n": 1026
+ },
+ "failures": [
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " لجب\n4\n0\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 10\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " [-15, -15, -1, 9, 22, 25, 33, 33]\n[33, 33, 25]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " engine_summer\nengine_summer\n4\n17\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 1 3\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 156\n152\n-14\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -11\n17\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 6\n6\n11\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 1 3\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " 1\n6\n5\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [1, 2, 3, 4]\n[4, 10]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " -16\n12\n-12\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " ['حاسوب', 'بيت']\n-1\nت\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": "def flip_words(s):\n    return '/'.join(word[::-1] for word in s.split() if len(word) >= 1)\n```\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_coprime#2",
+   "out": "def rel_prime_count(n):\n    count = 0\n    for i in range(1, n + 1):\n        if gcd(i, 82) == 1:\n            count += 1\n    return count\n```\n\n\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_max_div#2",
+   "out": "def largest_div(nums):\n    best = None\n    for x in nums:\n        if x % 11 == 0:\n            best = x\n    return best\n```\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": "def mfact(n):\n    if n <= 0:\n        return 1\n    return (n * (n-3) * (n-6)) % 47\n```\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": "n - 3\n```\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rotate#2",
+   "out": "xs[-k:] + xs[:-k]\n```\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rotate#2",
+   "out": "def roll(arr):\n    if not arr:\n        return []\n    k = 13 % len(arr)\n    return arr[k:] + arr[:k]\n```\n"
+  }
+ ]
+}

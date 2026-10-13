@@ -1,0 +1,23 @@
+bakeoff: da87bfb608c14b7cf20ba1ce41287e8de496c0cd | greedy=True | 2026-09-19 17:00 EDT
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   6%|▌         | 19/310 [00:00<00:01, 184.22it/s]Loading weights:  16%|█▋        | 51/310 [00:00<00:00, 262.87it/s]Loading weights:  26%|██▋       | 82/310 [00:00<00:00, 283.77it/s]Loading weights:  36%|███▌      | 111/310 [00:00<00:00, 224.48it/s]Loading weights:  44%|████▎     | 135/310 [00:00<00:00, 228.57it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 530.72it/s]
+  [8/85] generated
+  [16/85] generated
+  [24/85] generated
+  [32/85] generated
+  [40/85] generated
+  [48/85] generated
+  [56/85] generated
+  [64/85] generated
+  [72/85] generated
+  [80/85] generated
+  [85/85] generated
+
+===== RESULTS =====
+root      : 16/50 = 32.00%
+reasoning : 6/20 = 30.00%
+morphology: 4/15 = 26.67%
+overall   : 30.59%
+===================
+details -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_details_da87bfb608c14b7cf20ba1ce41287e8de496c0cd.json
+appended -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_results.jsonl

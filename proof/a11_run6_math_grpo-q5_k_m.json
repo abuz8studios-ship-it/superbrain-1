@@ -1,0 +1,390 @@
+{
+ "model": "run6_math_grpo-q5_k_m",
+ "gguf": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\train\\run6_math_grpo\\gguf\\superbrain1-q5_k_m.gguf",
+ "url": null,
+ "date": "2026-10-13 00:55",
+ "exam": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\train\\packet_a11_exam.jsonl",
+ "endpoint": "completion",
+ "n_predict": 768,
+ "gen_secs": 149.8,
+ "n": 1026,
+ "correct": 103,
+ "acc": 0.1004,
+ "per_type": {
+  "predict-output": {
+   "n": 380,
+   "correct": 19,
+   "acc": 0.05
+  },
+  "write-function": {
+   "n": 418,
+   "correct": 84,
+   "acc": 0.201
+  },
+  "fix-bug": {
+   "n": 114,
+   "correct": 0,
+   "acc": 0.0
+  },
+  "complete": {
+   "n": 114,
+   "correct": 0,
+   "acc": 0.0
+  }
+ },
+ "server_errors": 0,
+ "samples": [
+  {
+   "kind": "predict_output",
+   "q": "البرمجة التالية بلغة بايثون.\nسؤال: نفّذ المقطع البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\ntext = 'جبل'\nprint(text[::-1])\nprint(len(text))\nprint(text.count('ا'))\n```\nالجواب:",
+   "out": " لجب\n4\n0\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "c'، المضاعفات المشتركة تصبح 'TicTac'، وبقية الأعداد تبقى أرقامًا بصيغة نص.\nمثال: `play(17) == ['1', '2', '3', '4', '5', 'Tic', '7', '8', '9', 'Tac', '11', 'Tic', '13', '14', '15', '16', '17']`\nالجواب:",
+   "out": " ['1', '2', '3', '4', '5', 'Tic', '7', '8', '9', 'Tac', '11', 'Tic', '13', '14', '15', '16', '17']\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\nx = 376\nc = 0\nwhile x != 1:\n    if x % 2 == 0:\n        x = x // 2\n    else:\n        x = 3 * x + 1\n    c += 1\nprint(c)\n```\nالجواب:",
+   "out": " 10\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "دالة اسمها `flip_words` تستقبل نصًا s، وتعيد نصًا يحتوي الكلمات التي عدد أحرفها ≥ 1 من آخرها إلى أولها، موصولة بالفاصل '/'.\nمثال: `flip_words('in at a it desert on') == 'on/desert/it/a/at/in'`\nالجواب:",
+   "out": " 'on/desert/it/a/at/in'\n",
+   "ok": false
+  },
+  {
+   "kind": "fix_bug",
+   "q": "بعض الحالات. اكتب النسخة المصحّحة كاملة.\n```python\ndef weighted_sum(n):\n    total = 0\n    for i in range(0, n):\n        total += 3 * i ** 4\n    return total\n```\nمثال: `weighted_sum(4) == 1062`\nالجواب:",
+   "out": " 3 * i ** 4\n",
+   "ok": false
+  },
+  {
+   "kind": "fix_bug",
+   "q": "في بعض الحالات. اكتب النسخة المصحّحة كاملة.\n```python\ndef sum_powers(n):\n    total = 0\n    for i in range(0, n):\n        total += 10 * i ** 2\n    return total\n```\nمثال: `sum_powers(8) == 2040`\nالجواب:",
+   "out": " 2040\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "2 مواقع إلى الأمام في الأبجدية (مع الالتفاف من z إلى a)، وتبقى بقية المحارف (الأحرف الكبيرة والأرقام والمسافات والرموز) كما هي.\nمثال: `shift_text('desert winter 2024') == 'fgugtv ykpvgt 2024'`\nالجواب:",
+   "out": " shift_text\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": " في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\nnums = [25, 9, 33, -1, 22, 33, -15, -15]\nprint(sorted(nums, key=lambda x: (abs(x - -3), x)))\nprint(sorted(nums, reverse=True)[:3])\n```\nالجواب:",
+   "out": " [-15, -15, -1, 9, 22, 25, 33, 33]\n[33, 33, 25]\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "ايثون.\nسؤال: نفّذ المقطع البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\nname = 'engine_summer'\nprint(name.replace('e', 'X'))\nprint(name.split('_'))\nprint(len(name))\n```\nالجواب:",
+   "out": " engine_summer\nengine_summer\n4\n17\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "مة البرمجة التالية بلغة بايثون.\nسؤال: نفّذ المقطع البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\nn = 68774\nc = 0\nwhile n > 10:\n    n = n // 3\n    c += 1\nprint(n, c)\n```\nالجواب:",
+   "out": " 1 3\n",
+   "ok": false
+  },
+  {
+   "kind": "fix_bug",
+   "q": "   best = None\n    for x in nums:\n        if x % 11 != 0 and (best is None or x > best):\n            best = x\n    return best\n```\nمثال: `largest_div([-26, 56, 10, -23, 52, 14, -8, 8]) == None`\nالجواب:",
+   "out": " 56\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\ndef g(x, y=2):\n    if x > y:\n        return x * 8 - y\n    return x + y * 8\n\nprint(g(20))\nprint(g(20, -2))\nprint(g(g(-2), 20))\n```\nالجواب:",
+   "out": " 156\n152\n-14\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "برمجة التالية بلغة بايثون.\nسؤال: نفّذ المقطع البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\nacc = 11\nfor x in range(-3, 17, 1):\n    acc -= x * 1\nprint(acc)\nprint(x)\n```\nالجواب:",
+   "out": " -10\n17\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "رمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\ndef g(x, y=4):\n    if x > y:\n        return x * 1 - y\n    return x + y * 1\n\nprint(g(2))\nprint(g(2, 3))\nprint(g(g(3), 2))\n```\nالجواب:",
+   "out": " 6\n6\n10\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "يثون.\nسؤال: عرّف الدالة `freq_of` التي تستقبل سلسلة s وتعيد قاموس تكرارات للمحارف 'h'، 'l'، 'r' فقط (كل محرف ← عدد مرات وجوده، ولو كان 0).\nمثال: `freq_of('coffee') == {'h': 0, 'l': 0, 'r': 0}`\nالجواب:",
+   "out": " def freq_of(s):\n    return {'h': s.count('h'), 'l': s.count('l'), 'r': s.count('r')}\n",
+   "ok": true
+  },
+  {
+   "kind": "write_function",
+   "q": "د نصًا يحتوي الكلمات التي عدد أحرفها ≥ 1 من آخرها إلى أولها، موصولة بالفاصل '_'.\nمثال: `backwards('desert in banana go brain up falcon rocket') == 'rocket_falcon_up_brain_go_banana_in_desert'`\nالجواب:",
+   "out": " backwards\n",
+   "ok": false
+  },
+  {
+   "kind": "complete_function",
+   "q": "لحدود الموجبة، مع أخذ باقي القسمة على 47 في كل خطوة (وتُرجع 1 عندما n ≤ 0). اكتب الحل كاملًا.\n```python\ndef mfact(n):\n    if n <= 0:\n        return 1\n    return ____\n```\nمثال: `mfact(7) == 28`\nالجواب:",
+   "out": " n * mfact(n-3)\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "همة: حل مهمة البرمجة التالية بلغة بايثون.\nسؤال: عرّف الدالة `rel_prime_count` التي تستقبل n وتعيد كم عددًا بين 1 وn لا يشترك مع العدد 82 في أي قاسم أكبر من 1.\nمثال: `rel_prime_count(47) == 23`\nالجواب:",
+   "out": " 23\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "التالية بلغة بايثون.\nسؤال: نفّذ المقطع البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\nx = 52030\ncount = 0\nwhile x > 7:\n    x = x // 3\n    count += 1\nprint(x, count)\n```\nالجواب:",
+   "out": " 1 3\n",
+   "ok": false
+  },
+  {
+   "kind": "complete_function",
+   "q": "لحدود الموجبة، مع أخذ باقي القسمة على 73 في كل خطوة (وتُرجع 1 عندما n ≤ 0). اكتب الحل كاملًا.\n```python\ndef mfact(n):\n    if n <= 0:\n        return 1\n    return ____\n```\nمثال: `mfact(7) == 21`\nالجواب:",
+   "out": " n * mfact(n-4)\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "`label_numbers(28) == ['1', '2', '3', '4', 'Foo', '6', '7', '8', 'Bar', 'Foo', '11', '12', '13', '14', 'Foo', '16', '17', 'Bar', '19', 'Foo', '21', '22', '23', '24', 'Foo', '26', 'Bar', '28']`\nالجواب:",
+   "out": " ['1', '2', '3', '4', 'Foo', '6', '7', '8', 'Bar', 'Foo', '11', '12', '13', '14', 'Foo', '16', '17', 'Bar', '19', 'Foo', '21', '22', '23', '24', 'Foo', '26', 'Bar', '28']\n",
+   "ok": false
+  },
+  {
+   "kind": "predict_output",
+   "q": "جة التالية بلغة بايثون.\nسؤال: نفّذ المقطع البرمجي الآتي في ذهنك، ثم اكتب بدقة كل ما سيُطبع سطرًا بسطر:\n```python\ns = 'دفتر'\nprint(s.count('ر'))\nprint(len(s))\nprint(len(s.replace(' ', '')))\n```\nالجواب:",
+   "out": " 1\n6\n6\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "ة (مع الالتفاف من a إلى z)، وتبقى بقية المحارف (الأحرف الكبيرة والأرقام والمسافات والرموز) كما هي.\nمثال: `shift_letters('planet apple vector pixel river') == 'wshula hwwsl cljavy wpels ypcly'`\nالجواب:",
+   "out": " shift_letters('planet apple vector pixel river')\n",
+   "ok": false
+  },
+  {
+   "kind": "complete_function",
+   "q": " الموجبة، مع أخذ باقي القسمة على 13 في كل خطوة (وتُرجع 1 عندما n ≤ 0). اكتب الحل كاملًا.\n```python\ndef rec_prod(n):\n    if n <= 0:\n        return 1\n    return ____\n```\nمثال: `rec_prod(8) == 7`\nالجواب:",
+   "out": " n * rec_prod(n-1)\n",
+   "ok": false
+  },
+  {
+   "kind": "write_function",
+   "q": "ars` التي تستقبل سلسلة s وتعيد قاموس تكرارات للمحارف 'a'، 'e'، 's'، 't' فقط (كل محرف ← عدد مرات وجوده، ولو كان 0).\nمثال: `count_chars('table orange table') == {'a': 3, 'e': 3, 's': 0, 't': 2}`\nالجواب:",
+   "out": " {'a': 3, 'e': 3, 's': 0, 't': 2}\n",
+   "ok": false
+  }
+ ],
+ "failures": [
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " لجب\n4\n0\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_fizz#2",
+   "out": " ['1', '2', '3', '4', '5', 'Tic', '7', '8', '9', 'Tac', '11', 'Tic', '13', '14', '15', '16', '17']\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 10\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": " 'on/desert/it/a/at/in'\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_power_sum#2",
+   "out": " 3 * i ** 4\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_power_sum#2",
+   "out": " 2040\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_caesar#2",
+   "out": " shift_text\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " [-15, -15, -1, 9, 22, 25, 33, 33]\n[33, 33, 25]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " engine_summer\nengine_summer\n4\n17\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 1 3\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_max_div#2",
+   "out": " 56\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 156\n152\n-14\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -10\n17\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 6\n6\n10\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": " backwards\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": " n * mfact(n-3)\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_coprime#2",
+   "out": " 23\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 1 3\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": " n * mfact(n-4)\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_fizz#2",
+   "out": " ['1', '2', '3', '4', 'Foo', '6', '7', '8', 'Bar', 'Foo', '11', '12', '13', '14', 'Foo', '16', '17', 'Bar', '19', 'Foo', '21', '22', '23', '24', 'Foo', '26', 'Bar', '28']\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " 1\n6\n6\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_caesar#2",
+   "out": " shift_letters('planet apple vector pixel river')\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": " n * rec_prod(n-1)\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_char_freq#2",
+   "out": " {'a': 3, 'e': 3, 's': 0, 't': 2}\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_caesar#2",
+   "out": " 'rot'\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_char_freq#2",
+   "out": " {'i': 1, 'm': 0, 'r': 0, 't': 0}\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rotate#2",
+   "out": " xs[k:] + xs[:k]\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_max_div#2",
+   "out": " 57\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [1, 2, 3, 4]\n[4, 10]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " -16\n12\n-12\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_digit_pow#2",
+   "out": " 14\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " ['حاسوب', 'بيت']\n-1\nت\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " banana\ncloud\npython\nwinter\nriver\nriver\npython\ncloud\nbanana\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [-3, 3, 12, 21]\n[4, 39]\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_caesar#2",
+   "out": " 'pbqr fgbar na vf Hryyb'\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_char_freq#2",
+   "out": " {'b': 0, 'e': 2, 'n': 1}\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -100\n27\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_slice#2",
+   "out": " [22, 11, 1, 31, 22, 33, 22]\n[24, 11, 22, 33]\n120\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_power_sum#2",
+   "out": " 728\n"
+  },
+  {
+   "kind": "fix_bug",
+   "template": "f_max_div#2",
+   "out": " 36\n"
+  }
+ ]
+}

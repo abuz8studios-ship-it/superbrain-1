@@ -1,0 +1,346 @@
+{
+ "model": "run6_math_grpo-q5_k_m",
+ "harness": "a11_eval_v2",
+ "gguf": null,
+ "url": "http://127.0.0.1:8121",
+ "date": "2026-10-13 04:58",
+ "exam": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\train\\packet_a11_exam.jsonl",
+ "endpoint": "completion",
+ "prefill_code_kinds": "\n```python\n",
+ "n_predict": 768,
+ "gen_secs": 155.7,
+ "raw": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\proof\\a11_v2_raw_run6_math_grpo-q5_k_m.jsonl",
+ "n": 1026,
+ "correct": 501,
+ "acc": 0.4883,
+ "per_type": {
+  "predict-output": {
+   "n": 380,
+   "correct": 19,
+   "acc": 0.05
+  },
+  "write-function": {
+   "n": 418,
+   "correct": 293,
+   "acc": 0.701
+  },
+  "fix-bug": {
+   "n": 114,
+   "correct": 111,
+   "acc": 0.9737
+  },
+  "complete": {
+   "n": 114,
+   "correct": 78,
+   "acc": 0.6842
+  }
+ },
+ "server_errors": 0,
+ "v1_reference": {
+  "file": "E:\\ABU\\02_PROJECTS\\AHMAD-1\\proof\\a11_run6_math_grpo-q5_k_m.json",
+  "correct": 103,
+  "n": 1026
+ },
+ "failures": [
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " لجب\n4\n0\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 10\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": "def flip_words(s):\n    return '/'.join(word[::-1] for word in s.split() if len(word) >= 1)\n```\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " [-15, -15, -1, 9, 22, 25, 33, 33]\n[33, 33, 25]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " engine_summer\nengine_summer\n5\n16\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 1 3\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 152\n156\n-14\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -10\n17\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 6\n6\n11\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": "def mfact(n):\n    if n <= 0:\n        return 1\n    return (n * (n-3) * (n-6)) % 47\n```\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_coprime#2",
+   "out": "def rel_prime_count(n):\n    count = 0\n    for i in range(1, n + 1):\n        if 82 not in [i for i in range(1, min(i, 82) + 1) if i * i <= 82]:\n            count += 1\n    return count\n```\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 1 3\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " 1\n6\n6\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [1, 2, 3, 4]\n[4, 10]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " -16\n12\n-12\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " ['حاسوب', 'بيت']\n-1\nت\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " banana\ncloud\npython\nwinter\nriver\nriver\npython\ncloud\nbanana\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [-3, 3, 12, 21]\n[4, 39]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -100\n27\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_slice#2",
+   "out": " [22, 11, 1, 31, 22, 33, 22], [12, 24, 22, 33], 144\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_dict#2",
+   "out": " 6\nمنى\n190\n['منى', 'سلمى']\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " 154\n17\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " نيبص حصيب\n14\n0\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " -3\n19\n-11\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " data\nsignal\npython\nstone\nwinter\n('winter', 'stone', 'python')\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": "def rev_join(s):\n    return '/'.join(word[::-1] for word in s.split() if len(word) >= 2)\n```\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_slice#2",
+   "out": " 34 26 17 25 1 [-8] 3 2\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_rec#2",
+   "out": " 4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_coprime#2",
+   "out": "def coprimes(n):\n    count = 0\n    for i in range(1, n + 1):\n        if 45 % i != 0:\n            count += 1\n    return count\n```\n\n\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " ['table']\nble\n6\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -10\n-2\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " -1\n13\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_loop#2",
+   "out": " 0\n-3\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " CLOUD_PIXEL\nELCIPUD_LEOC\nLUD\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [2, 3]\n2 9\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_arabic#2",
+   "out": " 11\nنور\n['نور', 'حاسوب']\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 10\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_fizz#2",
+   "out": "def game(n):\n    return ['Red' if i % 6 == 0 else 'Blue' if i % 9 == 0 else 'RedBlue' if i % 6 == 0 and i % 9 == 0 else str(i) for i in range(1, n + 1)]\n```\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_coprime#2",
+   "out": "def coprimes(n):\n    count = 0\n    for i in range(1, n + 1):\n        if gcd(i, 55) == 1:\n            count += 1\n    return count\n```\n\n\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": "def backwards(s):\n    return ','.join(sorted(word for word in s.split() if len(word) >= 4), reverse=True)\n```\n\n\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 8\n-9\n-4\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rotate#2",
+   "out": "xs[-k:] + xs[:-k]\n```\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " [-3, -3, -8, 29, 14, 19]\n[19, 14, 29]\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_comp#2",
+   "out": " [-2, -2, -2]\n0 -6\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " 2\ncloud_cloud\ncloud_cloud\n18\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_filter_range#2",
+   "out": "def between_times(xs):\n    return [x * 5 for x in range(-2, 39)]\n```\n\n\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_fizz#2",
+   "out": "def label_numbers(n):\n    return ['Foo' if i % 2 == 0 else 'Bar' if i % 10 == 0 else str(i) for i in range(1, n + 1)]\n```\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": "def mirror_words(s):\n    words = s.split()\n    mirrored_words = []\n    for word in words:\n        if len(word) >= 4:\n            mirrored_word = word[::-1]\n            if mirrored_word in words:\n                mirrored_words.append(mirrored_word)\n    return ' '.join(mirrored_words)\n```\n\n\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " 10\n2\nsummer#\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " 2\n[]\napple\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_str#2",
+   "out": " etirx\nmatrixX\n11\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " ('هشام', 48)\n ('منى', 70)\n ('علي', 20)\n ('أحمد', 9)\n ('هشام', 48)\n ('منى', 70)\n['أحمد', 'علي']\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rotate#2",
+   "out": "return arr[-k:] + arr[:-k]\n```\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_sort#2",
+   "out": " cloud\ndesert\npython\nmusic\nrocket\n['rocket', 'python', 'music']\n"
+  },
+  {
+   "kind": "complete_function",
+   "template": "c_rec_mod#2",
+   "out": "n - 4\n```\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_reverse_words#2",
+   "out": "def invert_words(s):\n    return '/'.join(word[::-1] for word in s.split() if len(word) >= 1)\n```\n\n\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_fizz#2",
+   "out": "def play(n):\n    return [str(i) if i % 6 != 0 else 'SunMoon' if i % 2 == 0 else 'Moon' if i % 3 == 0 else 'Sun' for i in range(1, n + 1)]\n```\n"
+  },
+  {
+   "kind": "write_function",
+   "template": "w_coprime#2",
+   "out": "def count_gcd1(n):\n    count = 0\n    for num in range(1, n + 1):\n        if num % 86 != 0 and 86 % num != 0:\n            count += 1\n    return count\n```\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_func#2",
+   "out": " 1\n-10\n-16\n"
+  },
+  {
+   "kind": "predict_output",
+   "template": "p_while#2",
+   "out": " 10\n"
+  }
+ ]
+}

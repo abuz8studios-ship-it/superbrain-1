@@ -1,0 +1,44 @@
+  [200/2258] generated
+  [400/2258] generated
+  [600/2258] generated
+  [800/2258] generated
+  [1000/2258] generated
+  [1200/2258] generated
+  [1400/2258] generated
+  [1600/2258] generated
+  [1800/2258] generated
+  [2000/2258] generated
+  [2200/2258] generated
+  [2258/2258] generated
+
+===== PACKET B =====
+morph                             388/428  = 90.65%
+morph_form/1                       28/33   = 84.85%
+morph_form/10                      21/22   = 95.45%
+morph_form/2                       90/98   = 91.84%
+morph_form/3                       48/55   = 87.27%
+morph_form/4                       67/71   = 94.37%
+morph_form/5                       62/66   = 93.94%
+morph_form/6                       30/40   = 75.00%
+morph_form/7                       13/14   = 92.86%
+morph_form/8                       29/29   = 100.00%
+morph_msa                         330/360  = 91.67%
+morph_qac                          58/68   = 85.29%
+root/bare                         634/915  = 69.29%
+root/fewshot                      644/915  = 70.38%
+root_class/bare/assimilated        41/71   = 57.75%
+root_class/bare/defective          35/77   = 45.45%
+root_class/bare/doubled            37/77   = 48.05%
+root_class/bare/hamzated           40/74   = 54.05%
+root_class/bare/hollow             79/124  = 63.71%
+root_class/bare/sound             402/492  = 81.71%
+root_class/fewshot/assimilated     41/71   = 57.75%
+root_class/fewshot/defective       37/77   = 48.05%
+root_class/fewshot/doubled         37/77   = 48.05%
+root_class/fewshot/hamzated        41/74   = 55.41%
+root_class/fewshot/hollow          81/124  = 65.32%
+root_class/fewshot/sound          407/492  = 82.72%
+root_msa/bare                     341/500  = 68.20%
+root_msa/fewshot                  345/500  = 69.00%
+root_qac/bare                     293/415  = 70.60%
+root_qac/fewshot                  299/415  = 72.05%

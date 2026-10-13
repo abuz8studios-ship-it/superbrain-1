@@ -1,0 +1,18 @@
+  [10/85] generated
+  [20/85] generated
+  [30/85] generated
+  [40/85] generated
+  [50/85] generated
+  [60/85] generated
+  [70/85] generated
+  [80/85] generated
+  [85/85] generated
+
+===== RESULTS =====
+root      : 45/50 = 90.00%
+reasoning : 20/20 = 100.00%
+morphology: 13/15 = 86.67%
+overall   : 91.76%
+===================
+details -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_details_g4_ta-q5_k_m.json
+appended -> E:\ABU\02_PROJECTS\AHMAD-1\proof\bakeoff_results.jsonl

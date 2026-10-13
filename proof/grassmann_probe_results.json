@@ -1,0 +1,274 @@
+{
+  "model": "google/gemma-4-E2B-it",
+  "model_path": "E:\\ABU\\MODELS\\hf_cache\\models--google--gemma-4-E2B-it\\snapshots\\3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "device": "cuda",
+  "hidden_dim": 1536,
+  "layer": "last",
+  "pooling": "mean over word token span (last hidden state), bf16 -> float",
+  "n_word_in_context_vectors": 90,
+  "seed": 0,
+  "concepts_en": {
+    "animal": [
+      "dog",
+      "cat",
+      "bird"
+    ],
+    "color": [
+      "red",
+      "blue",
+      "green"
+    ],
+    "motion": [
+      "run",
+      "walk",
+      "swim"
+    ]
+  },
+  "arabic_triplet": {
+    "ar": [
+      "كتب",
+      "علم",
+      "فهم"
+    ],
+    "en_equiv": [
+      "write",
+      "teach",
+      "understand"
+    ],
+    "translit": [
+      "kataba",
+      "alima",
+      "fahima"
+    ]
+  },
+  "a_within_vs_across": {
+    "within_concept_mean_cos": 0.730002067368182,
+    "within_concept_n": 315,
+    "across_concept_mean_cos": 0.703832681408083,
+    "across_concept_n": 675
+  },
+  "b_simplex_test": {
+    "animal": {
+      "centroid_pairwise_cos": [
+        0.9519339203834534,
+        0.9507114291191101,
+        0.9523699879646301
+      ],
+      "mean": 0.9516717791557312,
+      "expected_simplex_k3": -0.5
+    },
+    "color": {
+      "centroid_pairwise_cos": [
+        0.9119570851325989,
+        0.9356437921524048,
+        0.929069459438324
+      ],
+      "mean": 0.9255567789077759,
+      "expected_simplex_k3": -0.5
+    },
+    "motion": {
+      "centroid_pairwise_cos": [
+        0.9432950019836426,
+        0.927307665348053,
+        0.928748369216919
+      ],
+      "mean": 0.9331170121828715,
+      "expected_simplex_k3": -0.5
+    }
+  },
+  "c_pca_per_concept": {
+    "animal": {
+      "explained_var_top1": 0.5364980697631836,
+      "cumulative_at_k": {
+        "1": 0.5364980697631836,
+        "2": 0.7370694279670715,
+        "3": 0.8137046694755554,
+        "4": 0.8700307607650757,
+        "8": 0.9755200743675232
+      },
+      "participation_ratio": 2.9349653720855713
+    },
+    "color": {
+      "explained_var_top1": 0.5146787166595459,
+      "cumulative_at_k": {
+        "1": 0.5146787166595459,
+        "2": 0.6992512345314026,
+        "3": 0.7849472165107727,
+        "4": 0.8439559936523438,
+        "8": 0.968312680721283
+      },
+      "participation_ratio": 3.176193952560425
+    },
+    "motion": {
+      "explained_var_top1": 0.604759931564331,
+      "cumulative_at_k": {
+        "1": 0.604759931564331,
+        "2": 0.7592784762382507,
+        "3": 0.8247316479682922,
+        "4": 0.8735178112983704,
+        "8": 0.9725260734558105
+      },
+      "participation_ratio": 2.5038793087005615
+    },
+    "arb0_ar": {
+      "explained_var_top1": 0.5414948463439941,
+      "cumulative_at_k": {
+        "1": 0.5414948463439941,
+        "2": 0.7874974012374878,
+        "3": 0.9387089610099792,
+        "4": 1.0,
+        "8": 1.0
+      },
+      "participation_ratio": 2.629119396209717
+    },
+    "arb0_en_equiv": {
+      "explained_var_top1": 0.5079012513160706,
+      "cumulative_at_k": {
+        "1": 0.5079012513160706,
+        "2": 0.7654581069946289,
+        "3": 0.8991931676864624,
+        "4": 1.0,
+        "8": 1.0
+      },
+      "participation_ratio": 2.8381168842315674
+    },
+    "arb1_ar": {
+      "explained_var_top1": 0.5271362662315369,
+      "cumulative_at_k": {
+        "1": 0.5271362662315369,
+        "2": 0.7365809679031372,
+        "3": 0.8903185725212097,
+        "4": 0.9999999403953552,
+        "8": 0.9999999403953552
+      },
+      "participation_ratio": 2.7979462146759033
+    },
+    "arb1_en_equiv": {
+      "explained_var_top1": 0.615589439868927,
+      "cumulative_at_k": {
+        "1": 0.615589439868927,
+        "2": 0.8329469561576843,
+        "3": 0.9394178986549377,
+        "4": 0.9999999403953552,
+        "8": 0.9999999403953552
+      },
+      "participation_ratio": 2.2665412425994873
+    },
+    "arb2_ar": {
+      "explained_var_top1": 0.5007628202438354,
+      "cumulative_at_k": {
+        "1": 0.5007628202438354,
+        "2": 0.7153281569480896,
+        "3": 0.884240984916687,
+        "4": 1.0,
+        "8": 1.0
+      },
+      "participation_ratio": 2.952174186706543
+    },
+    "arb2_en_equiv": {
+      "explained_var_top1": 0.5549296736717224,
+      "cumulative_at_k": {
+        "1": 0.5549296736717224,
+        "2": 0.8370978832244873,
+        "3": 0.9363398551940918,
+        "4": 1.0,
+        "8": 1.0
+      },
+      "participation_ratio": 2.4908618927001953
+    }
+  },
+  "d_principal_angles_top2_deg": {
+    "animal|color": [
+      9.164524246593022,
+      24.190494226853627
+    ],
+    "animal|motion": [
+      11.434921661460752,
+      35.13920680709598
+    ],
+    "color|motion": [
+      13.478378559392068,
+      33.37705078801064
+    ],
+    "random_baseline_mean_deg": 88.14554027298458
+  },
+  "e_crosslingual_deg": {
+    "concepts": {
+      "arb0": {
+        "ar_word": "كتب",
+        "en_equiv": "write",
+        "ar_vs_en_equiv_deg": [
+          27.9628089383666,
+          81.29810571542836
+        ],
+        "translit_vs_en_equiv_deg": [
+          0.6641131373530147,
+          9.986842063380786
+        ],
+        "ar_vs_OTHER_en_equiv_deg": [
+          17.206390242648588,
+          67.87110777088108,
+          34.975329511166436,
+          74.12517638536053
+        ],
+        "mean_ar_vs_match": 54.630457326897485,
+        "mean_ar_vs_mismatch": 48.54450097751416
+      },
+      "arb1": {
+        "ar_word": "علم",
+        "en_equiv": "teach",
+        "ar_vs_en_equiv_deg": [
+          40.14048741583504,
+          59.73564344512389
+        ],
+        "translit_vs_en_equiv_deg": [
+          13.593167175553228,
+          22.396078936625464
+        ],
+        "ar_vs_OTHER_en_equiv_deg": [
+          30.242507387321567,
+          76.9604224742838,
+          27.959429331743134,
+          73.50901386350392
+        ],
+        "mean_ar_vs_match": 49.93806543047947,
+        "mean_ar_vs_mismatch": 52.167843264213104
+      },
+      "arb2": {
+        "ar_word": "فهم",
+        "en_equiv": "understand",
+        "ar_vs_en_equiv_deg": [
+          14.3484533389457,
+          70.01408514099226
+        ],
+        "translit_vs_en_equiv_deg": [
+          12.942504766154013,
+          30.844355220702624
+        ],
+        "ar_vs_OTHER_en_equiv_deg": [
+          14.903030789796272,
+          70.8807246681678,
+          22.994036268664296,
+          55.461837487539434
+        ],
+        "mean_ar_vs_match": 42.181269239968984,
+        "mean_ar_vs_mismatch": 41.059907303541955
+      }
+    }
+  },
+  "verdict": "=== HUMAN VERDICT ===\n(a) Clustering: within-concept mean cos 0.730 vs across-concept 0.704 (gap 0.026).\n(b) Simplex (thesis 1.1): per-triplet centroid pairwise cos animal mean 0.952; color mean 0.926; motion mean 0.933 vs -0.5 predicted by an equiangular 3-simplex.\n(c) Points vs subspaces: mean top-1 explained variance 0.545, cumulative at k=2 0.763, k=3 0.879, mean participation ratio 2.73.\n    -> verdict: SUBSPACE-LIKE (k>=2 needed)\n(d) Grassmann separation: mean principal angle between concept top-2 subspaces 21.1 deg (random baseline 88.1 deg).\n    -> concepts are well-separated on G(2,R^d); GO for a Grassmannian layer.\n(e) Cross-lingual: ar~en-equivalent mean angle 48.9 deg vs ar~other-English-concept 47.3 deg (margin -1.7 deg).\n    -> cross-lingual subspace alignment NOT visible.\nRECOMMENDATION: G(2, R^1536) is GEOMETRICALLY SUPPORTED for same-language concepts, but NULL for cross-lingual transfer — Arabic and English subspaces do NOT align more than mismatched concepts do (margin -1.7 deg). A Grassmannian layer may proceed ONLY as a monolingual component; cross-lingual concept bridging is NOT evidenced here. NOTE: romanized (transliterated) Arabic aligns tightly with English equivalents (0.7-13.6 deg), i.e. script identity, not semantics, dominates the Arabic subspace gap.\nNOTE: this probe gates the geometric layer ONLY; it does not override the MUTHALLATH-1 kill-test discipline (regex baseline, checkpoint-diff, held-out eval) required before any geometric component earns re-entry.",
+  "verdict_flags": {
+    "point_like": false,
+    "subspace_like": true,
+    "grassmann_go": true,
+    "crosslingual_alignment_visible": false,
+    "recommended_k": 2,
+    "mean_top1_explained_var": 0.5448612239625719,
+    "mean_cum_k2": 0.7633898456891378,
+    "mean_cum_k3": 0.8790669971042209,
+    "mean_participation_ratio": 2.7321998278299966,
+    "mean_concept_separation_deg": 21.130762714901014,
+    "mean_ar_en_match_deg": 48.916597332448646,
+    "mean_ar_en_mismatch_deg": 47.25741718175641
+  }
+}
