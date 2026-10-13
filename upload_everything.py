@@ -26,13 +26,19 @@ for f in [md+r'\LEDGER.md',md+r'\m0\ablation.log',md+r'\m0\birth.log']: add(M,f,
 for c in ['muthallath0_final','jabarr_finisher','jabarr_tri_ON','jabarr_tri_OFF']:
     for f in glob.glob(md+rf'\m0\checkpoints\{c}\*'):
         if os.path.isfile(f): add(M,f,f'checkpoints/{c}/{os.path.basename(f)}')
-F=f'{U}/FAIE-proofs'
+F=f'{U}/FAIE'
 for f in glob.glob(r'D:\ABU\NEOCORTEX\*_proof.json'): add(F,f,os.path.basename(f))
-Q=f'{U}/Qadir-v1-v2'; h=r'F:\ABUZ8\ollama_qadir_hibernation_20260502_155035'
+Q=f'{U}/Qadir-v1-v2'; h=r'F:\ABUZ8\ollama_qadir_hibernation_20260502_155035'; lg=r'F:\ABUZ8\qadir_core_legacy'
 for f in glob.glob(h+r'\modelfiles\*.Modelfile'): add(Q,f,'modelfiles/'+os.path.basename(f))
-big=sorted([f for f in glob.glob(h+r'\ollama_blobs\*') if os.path.getsize(f)>1e9])
-names=['qadir_v1_c_bf16.gguf','qadir_v2_humble_bf16.gguf']
-for i,f in enumerate(big[:2]): add(Q,f,'blob_'+os.path.basename(f)[:20]+'.gguf')
+for f in glob.glob(lg+r'\native_brain\models\qadir_v1\*.gguf'): add(Q,f,'qadir_v1/'+os.path.basename(f))
+for f in glob.glob(lg+r'\native_brain\models\qadir_v2_humble\*.gguf'): add(Q,f,'qadir_v2_humble/'+os.path.basename(f))
+for a in ['qadir_v1_personality','qadir_v1_tools','qadir_v1_tools_f','qadir_v2_humility']:
+    for f in glob.glob(lg+rf'\adapters\{a}\final\*'):
+        if os.path.isfile(f): add(Q,f,f'adapters/{a}/{os.path.basename(f)}')
+for f in glob.glob(lg+r'\training\accuracy_report*.json')+glob.glob(lg+r'\scripts\logs\eval_*.log')+[lg+r'\COMPETITIVE_INTEL\eval_leaderboard_2026-05-07.md']: add(Q,f,'evals/'+os.path.basename(f))
+N=r'D:\ABU\NEOCORTEX'
+for f in glob.glob(N+r'\*.py')+glob.glob(N+r'\*.md')+glob.glob(N+r'\*.json')+glob.glob(N+r'\*.log')+glob.glob(N+r'\cloud\*'):
+    if os.path.isfile(f) and os.path.getsize(f)<50_000_000: add(F,f,('cloud/' if '\\cloud\\' in f else '')+os.path.basename(f))
 json.dump([[a,b,c,os.path.getsize(b)] for a,b,c in jobs],open(r'E:\ABU\02_PROJECTS\AHMAD-1\HF_UPLOAD_QUEUE.json','w'),indent=0)
 for repo in sorted({j[0] for j in jobs}): api.create_repo(repo,exist_ok=True)
 L('queue',len(jobs),'files',round(sum(os.path.getsize(j[1]) for j in jobs)/1e9,1),'GB')
@@ -44,3 +50,8 @@ for repo,loc,rem in jobs:
         api.upload_file(path_or_fileobj=loc,path_in_repo=rem,repo_id=repo); L('OK',repo,rem); done.append(rem)
     except Exception as e: L('FAIL',repo,rem,repr(e)[:200])
 L('ALL DONE',len(done),'/',len(jobs))
+try:
+    L('faie_model large folder start'); api.create_repo(F,exist_ok=True)
+    api.upload_large_folder(repo_id=F,folder_path=r'D:\ABU\NEOCORTEX\faie_model',repo_type='model',allow_patterns=['*']) ; L('faie_model DONE')
+except Exception as e: L('faie_model FAIL',repr(e)[:200])
+

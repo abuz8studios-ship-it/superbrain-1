@@ -1,7 +1,7 @@
 # HUGGING FACE TODO — ABUZ8 models (written 2026-10-13 05:58)
 Account: abuz8studios. Token already logged in on Pegasus (E:\ABU\venvs\sb1).
 Uploader: E:\ABU\02_PROJECTS\AHMAD-1\upload_everything.py  (resumable: skips files already on HF at same size)
-Queue: E:\ABU\02_PROJECTS\AHMAD-1\HF_UPLOAD_QUEUE.json (132 files, 144.9 GB)
+Queue: E:\ABU\02_PROJECTS\AHMAD-1\HF_UPLOAD_QUEUE.json (281 files, 171.5 GB) + faie_model 52.7 GB via upload_large_folder at the end
 Log:   E:\ABU\02_PROJECTS\AHMAD-1\upload2.log  (last line "ALL DONE n / 132" = finished)
 
 ## STEP 1 — Finish uploads
@@ -17,16 +17,24 @@ Log:   E:\ABU\02_PROJECTS\AHMAD-1\upload2.log  (last line "ALL DONE n / 132" = f
       run7b_a10_gentle, soup50, rl3f, rl1f, g4_morph, g4_rl, g4_ta, g4_sft1, g4_math
 - [ ] abuz8studios/MUTHALLATH-1-m0 — 0.5B triangle model: muthallath0_final, jabarr_finisher,
       jabarr_tri_ON, jabarr_tri_OFF + ablation.log, birth.log, LEDGER.md
-- [ ] abuz8studios/FAIE-proofs — faie_30tps / honest / paging / presynth proof JSONs
-      (GLM-5.2-REAM weights are third-party, NOT re-uploaded)
-- [ ] abuz8studios/Qadir-v1-v2 — qadir-v1-c and qadir-v2-humble bf16 GGUFs (14.19 GB each) + Modelfiles
+- [ ] abuz8studios/FAIE — OUR engine (D:\ABU\NEOCORTEX): all engine .py/.md/proof JSON/logs + cloud\,
+      plus faie_model\ (4,830 converted expert .bin files, 52.7 GB) via upload_large_folder (resumable).
+      Code also on GitHub: https://github.com/abuz8studios-ship-it/faie
+- [ ] abuz8studios/Qadir-v1-v2 — from F:\ABUZ8\qadir_core_legacy\native_brain\models:
+      qadir_v1: c_bf16 14.19 GB, f_q4km 4.36, plus_q8 7.54, q8 7.54
+      qadir_v2_humble: bf16 14.19 GB, q4km 4.36
+      adapters/ (final only): qadir_v1_personality, qadir_v1_tools, qadir_v1_tools_f, qadir_v2_humility
+      evals/: accuracy_report*.json, eval_*.log, eval_leaderboard_2026-05-07.md + Modelfiles
+      NOT uploaded (third-party bases): qwen25_7b_1m, LFM2 liquid GGUFs.
 
 ## STEP 3 — Model cards (README.md in each repo, numbers only from verdict/proof files)
 - [ ] SUPERBRAIN-1: base QCRI/Fanar-1-9B, Apache-2.0, Packet B scores, "own test set" note.
 - [ ] SUPERBRAIN-1-lab: one table row per run, copied from each verdict.json.
 - [ ] MUTHALLATH-1-m0: ArabicMMLU n=200 base 0.300 / tri_OFF 0.290 / tri_ON 0.225 = no gain. Tool arena: finisher 77.5%.
-- [ ] FAIE-proofs: 32.3 tok/s full residency, 1.31x kernel speedup, GLM-5.2-REAM Q2_K.
-- [ ] Qadir-v1-v2: no test scores found on disk — mark "untested".
+- [ ] FAIE: 32.3 tok/s at full expert residency, 1.31x kernel speedup, bit-identical to reference kernels.
+      HONEST OPEN BUG: assembled model output is incoherent — faie_sweep.json rank(Paris) 69,775 of 154,880
+      (target 0). Card must say "kernels proven, end-to-end text not yet correct". Fix plan in FAIE_HANDOFF_TO_FABLE.md.
+- [ ] Qadir-v1-v2: tool-call eval 480 rows / 48 tools: v3_fixed 27.1%, round2 11%, v3 0%; qwen_p1 baseline 89.1%. Leaderboard 87/100 is PROJECTED from code review, not measured — say so.
 
 ## STEP 4 — Verify
 - [ ] For each repo: HfApi().list_repo_tree(repo, recursive=True) sizes == local sizes in HF_UPLOAD_QUEUE.json.
@@ -36,4 +44,7 @@ Log:   E:\ABU\02_PROJECTS\AHMAD-1\upload2.log  (last line "ALL DONE n / 132" = f
 - [ ] E:\ABU\02_PROJECTS\AHMAD-1\train\* run folders except soup_g2f_run6\gguf\*q5_k_m.gguf
 - [ ] D:\ABU\02_PROJECTS\MUTHALLATH-1\m0\checkpoints (30 x 1.1 GB)
 - [ ] E:\ABU\MODELS\hf\gemma-4-E4B
+- [ ] F:\ABUZ8\qadir_core_legacy\adapters\*\checkpoint-* and *.bak* + optimizer.pt (keep finals until uploaded)
+- [ ] F:\ABUZ8\ollama_qadir_hibernation_*\ollama_blobs (duplicates of the bf16 GGUFs)
 - [ ] Log each deletion + freed GB in LEDGER.md and ABUZ8 Life board.
+
